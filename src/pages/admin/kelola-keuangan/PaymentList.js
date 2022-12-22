@@ -70,6 +70,13 @@ const PaymentList = () => {
                   <Link to={`edit/${user.id}`}>
                     <Button variant="success">Edit</Button>
                   </Link>
+
+                  <Link
+                    to={`/admin/buktipembayaran/${user.id}`}
+                    style={{ marginLeft: "5px" }}
+                  >
+                    <Button variant="primary">Bukti Pembayaran</Button>
+                  </Link>
                 </td>
               </tr>
             ))}

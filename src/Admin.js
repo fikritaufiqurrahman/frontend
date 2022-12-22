@@ -10,6 +10,7 @@ import AddUser from "./pages/admin/data-penduduk/AddUser";
 import PaymentList from "./pages/admin/kelola-keuangan/PaymentList";
 import EditPrice from "./pages/admin/kelola-keuangan/EditPrice";
 import EditStatus from "./pages/admin/kelola-keuangan/EditStatus";
+import ProofOfPayment from "./pages/admin/kelola-keuangan/ProofOfPayment";
 
 import NewsList from "./pages/admin/post-berita/NewsList";
 import AddNews from "./pages/admin/post-berita/AddNews";
@@ -29,6 +30,7 @@ function Admin() {
         <Route path="/admin/pembayaran" element={<PaymentList />} />
         <Route path="/admin/pembayaran/updateharga" element={<EditPrice />} />
         <Route path="/admin/pembayaran/edit/:id" element={<EditStatus />} />
+        <Route path="/admin/buktipembayaran/:id" element={<ProofOfPayment />} />
 
         <Route path="/admin/berita" element={<NewsList />} />
         <Route path="/admin/berita/add" element={<AddNews />} />
